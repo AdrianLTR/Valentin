@@ -44,6 +44,13 @@ p {
   color:white;
 }
 
+popup.p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+  color:black;
+}
+
 /* Contenedor de botones */
 .buttons {
   display: flex;
@@ -155,6 +162,8 @@ p {
   cursor: pointer;
   font-size: 1rem;
 }
+
+
 
 /* Estilos para las fotos tipo retratos (detrás del contenido) */
 .portrait {

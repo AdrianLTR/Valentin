@@ -44,7 +44,7 @@ p {
   color:white;
 }
 
-popup.p {
+.popup {
   font-size: 1.2rem;
   max-width: 600px;
   margin-bottom: 30px;

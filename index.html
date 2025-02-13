@@ -64,14 +64,14 @@
     const btnAccept = document.getElementById('btnAccept');
     btnAccept.addEventListener('click', function() {
       btnAccept.classList.add('clicked');
-      
+
       // Lanzar confeti
       confetti({
         particleCount: 150,
         spread: 70,
         origin: { y: 0.6 }
       });
-      
+
       setTimeout(() => {
         document.querySelector('.content h1').textContent = "Solo te amo";
         document.querySelector('.buttons').style.display = 'none';

@@ -29,6 +29,7 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
+/* Títulos y párrafos */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -82,7 +83,6 @@ p {
   to { opacity: 1; }
 }
 
-
 /* Estilo y animación de la burbuja */
 .bubble {
   position: absolute;
@@ -95,9 +95,8 @@ p {
   border-radius: 50%;
   cursor: pointer;
   animation: moveBubble 8s linear infinite;
-  z-index: 20; /* Se aumenta para que la burbuja esté sobre el contenido */
+  z-index: 20; /* Se coloca por encima para ser clickeable */
 }
-
 
 @keyframes moveBubble {
   0% {
@@ -176,16 +175,42 @@ p {
   100% { transform: translate(0, 0) scale(1); opacity: 0.8; }
 }
 
-/* Responsividad */
+/* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
-  h1 {
+  .content {
+    padding: 10px;
+  }
+  .content h1 {
     font-size: 2rem;
   }
-  p {
+  .content p {
     font-size: 1rem;
+    max-width: 90%;
   }
   .action-btn {
     font-size: 1rem;
     padding: 8px 16px;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .portrait {
+    width: 100px;
+    height: 133px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.8rem;
+  }
+  .content p {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+  .action-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
   }
 }
